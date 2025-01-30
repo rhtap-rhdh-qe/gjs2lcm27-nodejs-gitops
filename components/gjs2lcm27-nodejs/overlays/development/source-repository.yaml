@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: gjs2lcm27-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/gjs2lcm27-nodejs

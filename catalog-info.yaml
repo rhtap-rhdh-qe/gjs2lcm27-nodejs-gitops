@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gjs2lcm27-nodejs-gitops
+  description: This is GitOps manifest for gjs2lcm27-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: gjs2lcm27-nodejs
+    backstage.io/kubernetes-id: gjs2lcm27-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: gjs2lcm27-nodejs   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:gjs2lcm27-nodejs
